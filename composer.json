@@ -1,0 +1,26 @@
+{
+    "name": "larasquad/filter",
+    "description": "This package make it easy to filter any resource.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "999 it solution",
+            "email": "999itsolution@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Larasquad\\Filter\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Larasquad\\Filter\\FilterServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Larasquad\Filter\Filter;
+
+class DummyClass extends Filter
+{
+    //
+}
