@@ -1,6 +1,6 @@
 # Larasquad Filter
 
-This package allows you to filter resource based on a request in a simple way. The
+This package allows you to filter resource based on a request in a simple way and makes you controller code clean.
 
 ## Basic usage
 Make a filter class and extend it by 
