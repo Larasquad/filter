@@ -3,7 +3,7 @@
 This package allows you to filter resource based on a request in a simple way. The
 
 ## Basic usage
-Step 1: Make a filter class and extend it by 
+Make a filter class and extend it by 
 ```bash
 use Larasquad\Filter\Filter
 ```
