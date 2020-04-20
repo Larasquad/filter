@@ -60,30 +60,6 @@ class Filter
     }
 
     /**
-     * Filters created_at column
-     *
-     * @param $date
-     *
-     * @return mixed
-     */
-    public function createdFrom($date)
-    {
-        return $this->query->whereDate('created_at', '>=', Carbon::createFromFormat('Y-m-d', $date));
-    }
-
-    /**
-     * Filters created_at column
-     *
-     * @param $date
-     *
-     * @return mixed
-     */
-    public function createdTo($date)
-    {
-        return $this->query->whereDate('created_at', '<=', Carbon::createFromFormat('Y-m-d', $date));
-    }
-
-    /**
      * Remove any request queries that's not whitelisted.
      *
      * @return array
