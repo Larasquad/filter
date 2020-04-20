@@ -2,6 +2,14 @@
 
 This package allows you to filter resource based on a request in a simple way and makes you controller code clean.
 
+## Installation
+
+You can install the package via composer:
+
+```bash
+composer require larasquad/filter
+```
+
 ## Basic usage
 Make a filter class and extend it by 
 ```bash
