@@ -14,7 +14,7 @@ class MakeFilter extends GeneratorCommand
      * @var string
      */
     protected $signature = 'make:filter
-                            {name : The name of the dataTable editor.}';
+                            {name : The name of the filter class.}';
 
     /**
      * The console command description.
