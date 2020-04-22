@@ -9,6 +9,13 @@ use Illuminate\Http\Request;
 class Filter
 {
     /**
+     * Get the model filterable columns
+     *
+     * @return array
+     */
+    protected $filterable = [];
+
+    /**
      * @var \Illuminate\Http\Request
      */
     protected $request;
@@ -66,6 +73,6 @@ class Filter
      */
     protected function getFilterables()
     {
-        return $this->request->all();
+        return $this->request->only($this->filterable);
     }
 }

@@ -29,10 +29,20 @@ use Larasquad\Filter\Filter;
 class  UserFilter  extends  Filter
 {
 
-//
+    /**
+     * Get the model filterable columns
+     *
+     * @return array
+     */
+    protected $filterable = [];
 
 }
 ```
+Specify the columns name of you table in `$filterable` array.
+```php
+    protected $filterable = ["first_name", "last_name", "email"];
+```
+Only, these column will be filtered.
 Now, inject the class in you controller method where you have injected the `Request $request`  class
 ```php
 

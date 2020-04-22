@@ -6,5 +6,10 @@ use Larasquad\Filter\Filter;
 
 class DummyClass extends Filter
 {
-    //
+    /**
+     * Get the model filterable columns
+     *
+     * @return array
+     */
+    protected $filterable = [];
 }
