@@ -43,6 +43,7 @@ Specify the columns name of you table in `$filterable` array.
     protected $filterable = ["first_name", "last_name", "email"];
 ```
 Only, these column will be filtered.
+
 Now, inject the class in you controller method where you have injected the `Request $request`  class
 ```php
 
