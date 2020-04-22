@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class Filter
 {
     /**
-     * Get the model filterable columns
+     * Whitelisted request filterable attributes
      *
      * @return array
      */

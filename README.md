@@ -30,7 +30,7 @@ class  UserFilter  extends  Filter
 {
 
     /**
-     * Get the model filterable columns
+     *  Whitelisted request filterable attributes
      *
      * @return array
      */
