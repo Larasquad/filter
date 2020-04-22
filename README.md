@@ -42,7 +42,7 @@ Specify the `$request` attributes which you want to filter in `$filterable` arra
 ```php
     protected $filterable = ["first_name", "last_name", "email"];
 ```
-Note that, if you send put an attribute on the `$filberable` array which is not available in model column, in these case, you have to write a method on it.
+Note that, if you put an attribute on the `$filberable` array which is not available in database column, in these case, you have to write a method on it.
 
 Example,
 
