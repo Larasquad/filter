@@ -38,11 +38,31 @@ class  UserFilter  extends  Filter
 
 }
 ```
-Specify the columns name of you table in `$filterable` array.
+Specify the `$request` attributes which you want to filter in `$filterable` array. 
 ```php
     protected $filterable = ["first_name", "last_name", "email"];
 ```
-Only, these column will be filtered.
+Note that, if you send put an attribute on the `$filberable` array which is not available in model column, in these case, you have to write a method on it.
+
+Example,
+
+```php
+    protected $filterable = ["first_name", "last_name", "email", "from", "to" ];
+```
+In these case, `from` and `to` attribute are not exists in my database column but I have send the attributes via `$request`, then I have to 
+specify the `from` and `to` method else it will get an error.
+
+```php
+    public function from($value)
+    {
+        $this->query->whereDate('date', '>', $value);
+    }
+
+    public function to($value)
+    {
+        $this->query->whereDate('to', '>', $value);
+    }
+```
 
 Now, inject the class in you controller method where you have injected the `Request $request`  class
 ```php
